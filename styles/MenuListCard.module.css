@@ -1,0 +1,107 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:200px;
+    background-color: #fafafa;
+    margin: 2%;
+    min-width: 300px;
+    max-height: 600px;
+    overflow-y: hidden;
+    padding: 1%;
+    text-align: center;
+    background: #F5F1F4;
+    background-image: url("https://res.cloudinary.com/abhaysonu/image/upload/v1658017673/pngwing.com_1_u9ibv2.png");
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 1s;
+}
+.card:hover {
+    box-shadow: 5px 16px 16px 10px rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+.container {
+    padding: 2px 16px;
+}
+.imgContainer{
+    width: 80%;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    margin: 0px auto;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.icons{
+    display: none;
+    position: absolute;
+    top: 40%;
+}
+.icons:hover{
+    color: green;
+}
+.imgContainer:hover{
+    background-color: rgb(202, 201, 201);
+    opacity: 0.5;
+}
+.imgContainer:hover .icons{
+    display: block;
+    opacity: 1;
+}
+.like{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    left: 5%;
+}
+.onlike{
+    color: red;
+}
+.rating{
+    font-size: 30px;
+    padding: 5px;
+    right: 5%;
+}
+.ratingnumber{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.card img{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.title{
+    cursor: pointer;
+    color: green;
+    text-transform: uppercase;
+}
+.card:hover .title{
+    color: red;
+    transition: 1s;
+}
+.card:hover .description{
+    color: green;
+    transition: 1s;
+}
+.description{
+    color:white;
+    font-weight: 600;
+}
+@media screen and (max-width:300px){
+    .card{
+        min-width: 150px;
+        max-height: 450px;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}

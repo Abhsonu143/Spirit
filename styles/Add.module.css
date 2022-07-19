@@ -1,0 +1,145 @@
+.container{
+    width: 100%;
+    height: 1400px;
+    background-color: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.wrapper{
+    width: 500px;
+    background-color: white;
+    padding: 20px 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.selectItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapperList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.modelName{
+    margin: 5px 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.modelName:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+.addItem{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.selectedType{
+    padding: 0 5px;
+}
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.input{
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+.priceContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.inputSm{
+    width: 25%;
+}
+.extra{
+    display: flex;
+    justify-content: space-between;
+}
+.extraItems{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.extraItem{
+    border: 2px solid tomato;
+    padding: 5px;
+    font-size: 20px;
+    color: tomato;
+    border-color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.extraItem{
+    padding: 5px;
+    border: 1px solid tomato;
+    font-size: 20px;
+    color: tomato;
+    border-color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.addButton{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.addButton:hover{
+    color: green;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid green;
+}
+@media screen and (max-width:850px) {
+}

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: beige;
+    padding: 10px 10px;
+    margin: 20px 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.name{
+    color: rgb(26, 0, 176);
+    padding: 10px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.message{
+    padding: 0 5px;
+}
+.quote{
+    color: rgb(228, 120, 138);
+    font-size: 30px;
+}

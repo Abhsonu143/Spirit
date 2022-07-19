@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato&family=Ubuntu&display=swap');
+/* font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+.pageContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+.menu{
+    padding: 10px 20px;
+    position: sticky;
+    top: 9.5rem;
+    z-index: 1;
+}
+.menu Link{
+    text-decoration: none;
+}
+.menubutton{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.menubutton:hover{
+    color: green;
+    border: 2px solid green;
+    background-color: white;
+}
+
+.container{
+    height: fit-content;
+    display: flex;
+}
+.left{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.right{
+    flex: 1;
+    padding: 20px;
+}
+.title{
+    text-transform: capitalize;
+}
+.imgContainer{
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+}
+.price{
+    color: red;
+    font-size: 3vw;
+    font-weight: 400;
+    border-bottom: 1px solid red;
+}
+.sizes{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.size{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.size:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+.size:last-child{
+    width: 50px;
+    height: 50px;
+}
+.number{
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    background-color: teal;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 0.2vw;
+    border-radius: 10px;
+}
+.ingredients{
+    display: flex;
+    margin-bottom: 30px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+.quantity{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    color: #377D71;
+}
+.quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+.add{
+    display: flex;
+}
+.plusminus{
+    font-size: 30px;
+    font-weight: 500;
+}
+.plusminus:hover{
+    color: #ff00a2;
+}
+.button{
+    height: 30px;
+    margin-left: 10px;
+    background-color: rgb(224, 146, 2);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+    color: rgb(224, 146, 2);
+    border: 2px solid rgb(224, 146, 2);
+}
+
+@media screen and (max-width:850px){
+    .container{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .left{
+        padding-top: 20px;
+    }
+    .imgContainer{
+        height: 50vw;
+        width: 50vw;
+    }
+    .choose{
+        text-align: center;
+    }
+    .sizes{
+        width: 100%;
+    }
+    .size{
+        margin: 0 20px;
+    }
+    .ingredients{
+        justify-content: space-evenly;
+    }
+    .add{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .price{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:300px){
+    .add{
+        left: 20vw;
+    }
+}

@@ -1,0 +1,144 @@
+.container{
+    padding: 50px;
+    display: flex;
+}
+.left{
+    flex: 2;
+    /* background-color: red; */
+}
+.table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.tr td{
+    padding: 15px 20px;
+}
+.row:last-child{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+@keyframes inProgress{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.undone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.4;
+}
+.undone .checkedIcon, .inProgress .checkedIcon{
+    display: none;
+}
+.right{
+    flex: 1;
+    font-size: 1.52vw;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    width: 90%;
+    max-height: 20rem;
+    background-color: rgb(115, 212, 115);
+    border-radius: 2vw;
+    padding: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.totalTextTitle{
+    margin-right: 10px;
+}
+.button{
+    height: 3vw;
+    width: 10vw;
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    cursor: wait;
+}
+@media screen and (max-width:850px){
+    .container{
+        flex-direction: column;
+    }
+    .trTitle{
+        display: none;
+    }
+    .tr{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 4vw;
+        text-align: justify;
+        padding: 20px 10px;
+    }
+    .tr td{
+        padding: 0px;
+    }
+    .id:before{
+        content: "ID: ";
+        font-weight: bold;
+    }
+    .name:before{
+        content: "NAME: ";
+        font-weight: bold;
+    }
+    .address:before{
+        content: "ADDRESS: ";
+        font-weight: bold;
+    }
+    .total:before{
+        content: "TOTAL: ";
+        font-weight: bold;
+    }
+    .row:last-child{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .row div{
+        overflow: hidden;
+        width: 40%;
+        /* background-color: red; */
+    }
+    .done, .undone, .inProgress{
+        margin: 10px 10px;
+    }
+    .wrapper{
+        width: fit-content;
+        justify-content: center;
+        height: fit-content;
+    }
+    .button{
+        height: 35px;
+        width: 90px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .totalText{
+        font-size: 1rem;
+    }
+}

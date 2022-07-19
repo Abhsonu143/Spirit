@@ -1,0 +1,54 @@
+.container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: rgb(220, 220, 220);
+}
+.input{
+    height: 30px;
+    width: 250px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 10px 0;
+    font-weight: bold;
+}
+.textarea:hover,.input:hover,.input:focus{
+    border-radius: 0 10px 0 10px;
+    background-color: rgba(127, 255, 212, 0.3);
+}
+.textarea{
+    width: 250px;
+    height: 70px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.checkbox{
+    padding-bottom: 10px;
+}
+.button{
+    width: 250px;
+    height: 30px;
+    color: white;
+    background-color: rgb(253, 44, 114);
+    border: none;
+    font-weight: bold;
+}
+.button:hover{
+    color: rgb(253, 44, 114);
+    background-color: white;
+    border: 2px solid rgb(253, 44, 114);
+    border-radius: 3px;
+}

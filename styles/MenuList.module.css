@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    height: fit-content;
+}
+.menu{
+    padding: 10px 20px;
+    position: sticky;
+    top: 9.5rem;
+    z-index: 1;
+}
+.menu Link{
+    text-decoration: none;
+}
+.menubutton{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.menubutton:hover{
+    color: green;
+    border: 2px solid green;
+    background-color: white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
