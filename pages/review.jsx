@@ -18,7 +18,7 @@ export default function reviewpage({review}) {
 }
 
 export const getServerSideProps = async ()=> {
-const res=await axios.get("http://spirit-one.vercel.app/api/review");
+const res=await axios.get("https://spirit-one.vercel.app/api/review");
   return {
     props : {
       review:res.data
