@@ -20,7 +20,7 @@ const Login = () => {
         }catch(err){
             console.log(err);
         }
-        if(!res.data || Decrypt(CryptoJS.enc.Utf8.parse(res.data.password))!==password){
+        if(!res.data || Decrypt(res.data.password)!==password){
             setError(true);
             return;
         }
