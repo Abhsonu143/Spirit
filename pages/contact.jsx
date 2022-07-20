@@ -18,7 +18,7 @@ const Contact = () => {
             setSuccess(false);
             return;
         }
-        await axios.post("http://spirit-one.vercel.app/api/review",{name,phone,email,message});
+        await axios.post("https://spirit-one.vercel.app/api/review",{name,phone,email,message});
         
         setName('');
         setEmail('');
