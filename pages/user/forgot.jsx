@@ -4,6 +4,7 @@ import styles from "../../styles/Forget.module.css";
 import axios from "axios";
 import Link from "next/link";
 import {Encrypt,Decrypt} from "../../util/aes";
+import CryptoJS from "crypto-js";
 
 const Forgot = () => {
     const [username,setUsername] = useState(null);
@@ -34,7 +35,7 @@ const Forgot = () => {
             return;
         }
         else{
-            let encryptedpassword=Encrypt(newpassword);
+            let encryptedpassword=Encrypt(CryptoJS.enc.Utf8.parse(newpassword));
             try{
                await axios.put("https://spirit-one.vercel.app/api/user/register",{id,encryptedpassword});
                router.push("/user/login");
