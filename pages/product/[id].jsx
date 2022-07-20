@@ -110,8 +110,8 @@ const Product = ({item,menuItems}) => {
   )
 }
 export const getServerSideProps=async ({params})=>{
-    const res=await axios.get(`http://localhost:3000/api/products/${params.id}`);
-    const menuItems=await axios.get("http://localhost:3000/api/featureds");
+    const res=await axios.get(`https://spirit-one.vercel.app/api/products/${params.id}`);
+    const menuItems=await axios.get("https://spirit-one.vercel.app/api/featureds");
     return {
         props:{
             item:res.data,
