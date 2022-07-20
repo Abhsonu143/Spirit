@@ -15,7 +15,7 @@ const Login = () => {
     const handleClick=async()=>{
         var res;
         try{
-            res=await axios.post("http://spirit-one.vercel.app/api/user",{username});
+            res=await axios.post("https://spirit-one.vercel.app/api/user",{username});
         }catch(err){
             console.log(err);
         }
