@@ -24,7 +24,7 @@ const Register = () => {
         }
         let find;
         try{
-            find=await axios.post("http://spirit-one.vercel.app/api/user/checkregister",{username,email,phone});
+            find=await axios.post("https://spirit-one.vercel.app/api/user/checkregister",{username,email,phone});
         }catch(err){
             console.log("something went wrong!!!");
         }
@@ -34,7 +34,7 @@ const Register = () => {
         }
         let password=Encrypt(rawpassword);
         try{
-            await axios.post("http://spirit-one.vercel.app/api/user/register",{
+            await axios.post("https://spirit-one.vercel.app/api/user/register",{
                 username,password,name,phone,email
             });
             router.push("/user/login");
