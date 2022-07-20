@@ -5,7 +5,7 @@ const Layout = ({children}) => {
   return (
     <>
         <Top/>
-        <Navbar isuser={true} username={"abhay"}/>
+        <Navbar isuser={false} username={"abhay"}/>
         {children}
         <Footer/>
     </>
