@@ -35,9 +35,9 @@ export const getServerSideProps = async (ctx)=> {
   if(myCookie.token === process.env.TOKEN){
     admin=true;
   }
-  const Featuredres = await axios.get("http://localhost:3000/api/featureds");
-  const Menures = await axios.get( "http://localhost:3000/api/products");
-  const Galleryres=await axios.get("http://localhost:3000/api/gallery");
+  const Featuredres = await axios.get("http://spirit-one.vercel.app/api/featureds");
+  const Menures = await axios.get( "http://spirit-one.vercel.app/api/products");
+  const Galleryres=await axios.get("http://spirit-one.vercel.app/api/gallery");
   return {
     props : {
       featuredItems:Featuredres.data,
