@@ -5,6 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 import {Decrypt} from "../../util/aes";
 import Head from "next/head";
+import CryptoJS from "crypto-js";
 
 const Login = () => {
     const [username,setUsername] = useState(null);
@@ -19,7 +20,7 @@ const Login = () => {
         }catch(err){
             console.log(err);
         }
-        if(!res.data || Decrypt(res.data.password)!==password){
+        if(!res.data || Decrypt(CryptoJS.enc.Utf8.parse(res.data.password))!==password){
             setError(true);
             return;
         }
