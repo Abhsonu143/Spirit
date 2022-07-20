@@ -1,5 +1,4 @@
 import CryptoJS from "crypto-js";
-import key from "../secretKey.js";
 
 
 const Encrypt = (word) =>{
