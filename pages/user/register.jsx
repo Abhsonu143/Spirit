@@ -5,6 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 import { Encrypt } from "../../util/aes";
 import Head from "next/head";
+import CryptoJS from "crypto-js";
 
 const Register = () => {
     const [username,setUsername] = useState(null);
@@ -32,7 +33,7 @@ const Register = () => {
             setError(true);
             return;
         }
-        let password=Encrypt(rawpassword);
+        let password=Encrypt(CryptoJS.enc.Utf8.parse(rawpassword));
         try{
             await axios.post("https://spirit-one.vercel.app/api/user/register",{
                 username,password,name,phone,email
