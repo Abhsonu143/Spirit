@@ -124,7 +124,7 @@ const Forgot = () => {
             <button className={styles.button} onClick={handleForgot}>
                 Reset
             </button>
-            {matcherror && <span className={styles.error}>passwords didn't matched!</span> }
+            {matcherror && <span className={styles.error}>passwords didn&apos;t matched!</span> }
             {lengtherror && <span className={styles.error}>at least 8-character required </span> }
             {servererror && <span className={styles.error}>Something wrong, Please try again. </span> }
         </div>

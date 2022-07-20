@@ -43,31 +43,31 @@ const Order = ({order}) => {
             </div>
             <div className={styles.row}>
                 <div className={statusClass(0)}>
-                    <Image src="/images/orders/paid.png" width={30} height={30} alt="paid"/>
+                    <Image src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248070/uploads/paid_lkgknv.png" width={30} height={30} alt="paid"/>
                     <span>Payment</span>
                     <div className={styles.checkedIcon}>
-                        <Image className={styles.checkedIcon} src="/images/orders/checked.png" alt="done" width="20" height="20" />
+                        <Image className={styles.checkedIcon} src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248070/uploads/checked_rcugh8.png" alt="done" width="20" height="20" />
                     </div>
                 </div>
                 <div className={statusClass(1)}>
-                    <Image src="/images/orders/bake.png" width={30} height={30} alt="paid"/>
+                    <Image src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248069/uploads/bake_lfbg91.png" width={30} height={30} alt="paid"/>
                     <span>Preparing</span>
                     <div className={styles.checkedIcon}>
-                        <Image className={styles.checkedIcon} src="/images/orders/checked.png" alt="done" width="20" height="20" />
+                        <Image className={styles.checkedIcon} src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248070/uploads/checked_rcugh8.png" alt="done" width="20" height="20" />
                     </div>
                 </div>
                 <div className={statusClass(2)}>
                     <Image src="/images/orders/bike.png" width={30} height={30} alt="paid"/>
                     <span>On the way</span>
                     <div className={styles.checkedIcon}>
-                        <Image className={styles.checkedIcon} src="/images/orders/checked.png" alt="done" width="20" height="20" />
+                        <Image className={styles.checkedIcon} src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248069/uploads/bike_ampgyl.png" alt="done" width="20" height="20" />
                     </div>
                 </div>
                 <div className={statusClass(3)}>
-                    <Image src="/images/orders/delivered.png" width={30} height={30} alt="paid"/>
+                    <Image src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248070/uploads/delivered_rnmuke.png" width={30} height={30} alt="paid"/>
                     <span>Delivered</span>
                     <div className={styles.checkedIcon}>
-                        <Image className={styles.checkedIcon} src="/images/orders/checked.png" alt="done" width="20" height="20" />
+                        <Image className={styles.checkedIcon} src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248070/uploads/checked_rcugh8.png" alt="done" width="20" height="20" />
                     </div>
                 </div>
             </div>

@@ -6,11 +6,11 @@ const ReviewCard = ({review}) => {
         <div className={styles.name}>{review.name.slice(0,20)}</div>
         <span>
 
-          <span className={styles.quote}>"</span>
+          <span className={styles.quote}>&quot;</span>
           <span className={styles.message}>
                   {review.message}
           </span>
-          <span className={styles.quote}>"</span>
+          <span className={styles.quote}>&quot;</span>
         </span>
     </div>
   )

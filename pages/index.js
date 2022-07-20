@@ -25,7 +25,6 @@ export default function Home({menuItems,featuredItems,GalleryImages,admin}) {
       <div className={styles.topItems}>Our top picks</div>
       <Menu menuItems={menuItems}/>
       <About GalleryImages={GalleryImages}/>
-      {/* <Image src="/images/logo.png" alt="logo" /> */}
     </div>
   )
 }

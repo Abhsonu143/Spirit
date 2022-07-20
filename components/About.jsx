@@ -20,7 +20,7 @@ const About = ({GalleryImages}) => {
     <div className={styles.container}>
         <div className={styles.title}>About us</div>
         <div className={styles.description}>
-          We are a tight-knit, fun-loving, devoted team of local cooks spreading the gospel of good times and good food in. We offer limited capacity onsite events in our restaurant kitchen space. And worry not, our krewe will travel to your destination of choice from hotel ballrooms to private kitchens to entertain groups of all sizes. We cook, we tell stories, we deliver informative culinary demonstrations and lectures, but most of all, we treat every event like you're a guest at our dinner table. Join us
+          We are a tight-knit, fun-loving, devoted team of local cooks spreading the gospel of good times and good food in. We offer limited capacity onsite events in our restaurant kitchen space. And worry not, our krewe will travel to your destination of choice from hotel ballrooms to private kitchens to entertain groups of all sizes. We cook, we tell stories, we deliver informative culinary demonstrations and lectures, but most of all, we treat every event like you&apos;re a guest at our dinner table. Join us
         </div>
         <div className={gallerystyle}>
           <div className={styles.galleryText}>Gallery</div>

@@ -22,7 +22,7 @@ const Featured = ({featuredItems}) => {
   return (
     <div className={styles.container}>
         <div className={styles.arrowContainer} style={{left: 0}} onClick={()=>handleArrow("l")}>
-            <Image src="/images/featured/arrowl.png" alt="leftarrow" layout="fill" objectFit="contain"/>
+            <Image src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248054/uploads/arrowl_wjwl3x.png" alt="leftarrow" layout="fill" objectFit="contain"/>
         </div>
         <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
           {featuredItems.map((item)=>(
@@ -42,7 +42,7 @@ const Featured = ({featuredItems}) => {
           ))}
         </div>
         <div className={styles.arrowContainer} style={{right:0}} onClick={()=>handleArrow("r")}>
-            <Image src="/images/featured/arrowr.png" alt="rightarrow" layout="fill" objectFit="contain"/>
+            <Image src="https://res.cloudinary.com/abhaysonu/image/upload/v1658248055/uploads/arrowr_xw8goz.png" alt="rightarrow" layout="fill" objectFit="contain"/>
         </div>
     </div>
   )
