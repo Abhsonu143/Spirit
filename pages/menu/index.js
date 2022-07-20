@@ -18,7 +18,7 @@ export default function Menu({menuLists}){
 }
 
 export const getServerSideProps=async()=>{
-    const res=await axios.get("http://localhost:3000/api/featureds");
+    const res=await axios.get("https://spirit-one.vercel.app/api/featureds");
     return{
         props:{
             menuLists:res.data,
