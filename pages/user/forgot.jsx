@@ -36,7 +36,7 @@ const Forgot = () => {
         else{
             let encryptedpassword=Encrypt(newpassword);
             try{
-               await axios.put("http://spirit-one.vercel.app/api/user/register",{id,encryptedpassword});
+               await axios.put("https://spirit-one.vercel.app/api/user/register",{id,encryptedpassword});
                router.push("/user/login");
             }catch(err){
                 setServererror(true);
@@ -54,7 +54,7 @@ const Forgot = () => {
         }
         let res;
         try{
-            res=await axios.post("http://spirit-one.vercel.app/api/user/checkregister",{username,email,phone});
+            res=await axios.post("https://spirit-one.vercel.app/api/user/checkregister",{username,email,phone});
         }catch(err){
             console.log(err);
         }
