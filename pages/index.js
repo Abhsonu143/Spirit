@@ -32,9 +32,6 @@ export default function Home({menuItems,featuredItems,GalleryImages,admin}) {
 export const getServerSideProps = async (ctx)=> {
   const myCookie = ctx.req?.cookies||"";
   let admin=false;
-  if(myCookie.token === process.env.TOKEN){
-    admin=true;
-  }
   const Featuredres = await axios.get("https://spirit-one.vercel.app/api/featureds");
   const Menures = await axios.get( "https://spirit-one.vercel.app/api/products");
   const Galleryres=await axios.get("https://spirit-one.vercel.app/api/gallery");
