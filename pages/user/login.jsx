@@ -19,7 +19,7 @@ const Login = () => {
         }catch(err){
             console.log(err);
         }
-        if(!res.data || Decrypt(res.data.password)!==password){
+        if(!res.data || res.data.password!==password){
             setError(true);
             return;
         }
