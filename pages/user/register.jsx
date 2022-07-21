@@ -32,7 +32,7 @@ const Register = () => {
             setError(true);
             return;
         }
-        let password=Encrypt(rawpassword);
+        let password=rawpassword;
         try{
             await axios.post("https://spirit-one.vercel.app/api/user/register",{
                 username,password,name,phone,email
