@@ -54,7 +54,7 @@ const Forgot = () => {
         }
         let res;
         try{
-            res=await axios.post("http://localhost:3000/api/user/checkregister",{username,email,phone});
+            res=await axios.post("https://spirit-one.vercel.app/api/user/checkregister",{username,email,phone});
         }catch(err){
             console.log(err);
         }
